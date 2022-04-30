@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Vee2</string>
+    <string name="sing_in">Sing in</string>
+    <string name="password">Password</string>
+    <string name="user_id">User ID</string>
+    <string name="todo">TODO</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="new_user">New User</string>
+    <string name="sign_up">Sign up</string>
+    <string name="referal">Referal</string>
+    <string name="email">Email</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    <string name="sign_up_manual">
+        Make sure your given email and others details are correct.
+        After submitting all detail you will get ID &amp; Password on your given Email within 3 working days.
+        Use those ID &amp; Password for SignIn.
+    </string>
+    <string name="forget_password_manual">You will get credential on your given Email within 3 working days.</string>
+    <string name="proceed">Proceed</string>
+    <string name="temp_id">Temp ID</string>
+    <string name="id">ID</string>
+    <string name="user">User</string>
+    <string name="name">Name</string>
+</resources>

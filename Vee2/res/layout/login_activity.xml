@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".login_activity"
+    android:padding="35dp">
+
+
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:minHeight="70dp"
+            android:minWidth="70dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/img_light"
+            android:contentDescription="@string/todo" />
+
+
+        <TextView
+            android:id="@+id/slogan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="@string/sing_in"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/user_id"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_id" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="false"
+                android:layout_marginBottom="5dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/forget_password"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:textColor="@color/black"
+                android:text="@string/forget_password"
+                android:layout_gravity="right"
+                android:onClick="ForgetPasswordbtn"
+                android:textSize="12sp"
+                android:elevation="0dp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sing_in"
+                android:onClick="SingIn"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                tools:ignore="UsingOnClickInXml" />
+
+
+
+            <Button
+                android:id="@+id/new_user"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="@string/new_user"
+                android:onClick="NewUser"
+                android:layout_gravity="center"
+                android:elevation="0dp"
+                android:layout_margin="5dp"/>
+
+
+            <ProgressBar
+                android:id="@+id/login_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateTint="@color/black"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+</LinearLayout>
